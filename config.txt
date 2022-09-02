@@ -21,15 +21,6 @@
 # 相识的日子，格式同上，暂不不支持农历
 "love_date": "2022-01-25",
 # 金句中文，如果设置了，则会显示这里的，如果为空，默认会读取金山的每日金句
-# -*- coding: utf-8 -*-
-import http.client, urllib
-conn = http.client.HTTPSConnection('api.tianapi.com')  #接口域名
-params = urllib.parse.urlencode({'496f6bc68f519b42613a83253f10693d':'你的APIKEY'})
-headers = {'Content-type':'application/x-www-form-urlencoded'}
-conn.request('POST','/pyqwenan/index',params,headers)
-res = conn.getresponse()
-data = res.read()
-print(data.decode('utf-8'))
 "note_ch": "",
 # 金句英文
 "note_en": ""
